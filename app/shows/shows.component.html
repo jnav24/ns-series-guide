@@ -1,3 +1,24 @@
 <app-action-bar title="Shows"></app-action-bar>
 
-<StackLayout class="app"></StackLayout>
+<TabView
+	androidSelectedTabHighlightColor="#ffffff"
+	selectedTabTextColor="#D1C8E3"
+	tabTextColor="#D1C8E3"
+	tabTextFontSize="13"
+	tabBackgroundColor="#6545a0">
+	<StackLayout class="app" *tabItem="{ title: 'Shows' }">
+		<Label style="color: #fff" text="Shows"></Label>
+	</StackLayout>
+
+	<StackLayout class="app" *tabItem="{ title: 'History' }">
+		<Label style="color: #fff" text="History"></Label>
+	</StackLayout>
+
+	<StackLayout class="app" *tabItem="{ title: 'Upcoming' }">
+		<Label style="color: #fff" text="Upcoming"></Label>
+	</StackLayout>
+
+	<StackLayout class="app" *tabItem="{ title: 'Recent' }">
+		<Label style="color: #fff" text="Recent"></Label>
+	</StackLayout>
+</TabView>
