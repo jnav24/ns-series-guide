@@ -2,3 +2,7 @@
 // This is where the vast majority of your CSS code goes.
 
 @import './assets/sass/imports';
+
+StackLayout.app {
+	background: map_get($colors, secondary);
+}
