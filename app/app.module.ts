@@ -1,6 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { AppRoutingModule } from './app-routing.module';
+import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angular';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -23,6 +24,7 @@ import { ShowsComponent } from './pages/shows/shows.component';
   imports: [
       NativeScriptModule,
       AppRoutingModule,
+      NativeScriptUISideDrawerModule,
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],

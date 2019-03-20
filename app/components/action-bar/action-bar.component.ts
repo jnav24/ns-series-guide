@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {registerElement} from "nativescript-angular";
 import { isAndroid } from 'tns-core-modules/platform';
+import {SideDrawerService} from '~/services/side-drawer.service';
 
 registerElement("StatusBar", () => require("nativescript-statusbar").StatusBar);
 
@@ -16,7 +17,11 @@ export class ActionBarComponent implements OnInit {
     @Input() public title: string;
     public showStatusBar = isAndroid;
 
-    constructor() { }
+    constructor(private sideDrawerService: SideDrawerService) { }
 
     ngOnInit() {}
+
+    onToggleMenu() {
+        this.sideDrawerService.toogleDrawer();
+    }
 }
