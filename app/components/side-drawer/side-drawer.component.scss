@@ -1,0 +1,13 @@
+@import './../../assets/sass/imports';
+
+.side-drawer__header {
+	background: map_get($colors, primary);
+	color: #fff;
+	height: 150;
+	padding-bottom: 10;
+	padding-left: 15;
+}
+
+.side-drawer__body {
+	padding-left: 15;
+}

@@ -3,10 +3,6 @@
 
 @import './assets/sass/imports';
 
-StackLayout.app {
+StackLayout.app, .drawer-container {
 	background: map_get($colors, secondary);
-}
-
-.drawer-container {
-	background: #900;
 }
