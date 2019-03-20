@@ -6,5 +6,11 @@
 
 <StackLayout
 	class="side-drawer__body">
-	<Button text="From side drawer"></Button>
+	<ListView [items]="pages">
+		<ng-template let-page="item" let-int="index">
+			<FlexboxLayout>
+				<Label [text]="page.text"></Label>
+			</FlexboxLayout>
+		</ng-template>
+	</ListView>
 </StackLayout>

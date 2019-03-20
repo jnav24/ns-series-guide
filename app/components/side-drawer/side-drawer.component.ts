@@ -7,5 +7,12 @@ import {Component, OnInit} from '@angular/core';
     moduleId: module.id,
 })
 export class SideDrawerComponent implements OnInit {
+    pages: Array<{ icon: string; text: string; link: string; }> = [
+        { icon: '', text: 'Shows', link: '' },
+        { icon: '', text: 'Lists', link: '' },
+        { icon: '', text: 'Movies', link: '' },
+        { icon: '', text: 'Statistics', link: '' },
+    ];
+
     ngOnInit() {}
 }
