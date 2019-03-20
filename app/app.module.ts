@@ -6,6 +6,7 @@ import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angul
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ActionBarComponent } from './components/action-bar/action-bar.component';
+import { SideDrawerComponent } from './components/side-drawer/side-drawer.component';
 import { ShowsComponent } from './pages/shows/shows.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -20,6 +21,7 @@ import { ShowsComponent } from './pages/shows/shows.component';
       HomeComponent,
       ActionBarComponent,
       ShowsComponent,
+      SideDrawerComponent,
   ],
   imports: [
       NativeScriptModule,
