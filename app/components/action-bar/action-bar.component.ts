@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {registerElement} from "nativescript-angular";
+import { isAndroid } from 'tns-core-modules/platform';
 
 registerElement("StatusBar", () => require("nativescript-statusbar").StatusBar);
 
@@ -13,6 +14,7 @@ declare var android: any;
 })
 export class ActionBarComponent implements OnInit {
     @Input() public title: string;
+    public showStatusBar = isAndroid;
 
     constructor() { }
 
