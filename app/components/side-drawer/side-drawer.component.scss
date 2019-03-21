@@ -20,5 +20,14 @@
 			background: lighten(map_get($colors, secondary), 10%);
 			color: map_get($colors, accent);
 		}
+
+		&.page-icon {
+			font-size: 15;
+			padding-top: 18;
+		}
+
+		&.page-text {
+			font-size: 16;
+		}
 	}
 }
