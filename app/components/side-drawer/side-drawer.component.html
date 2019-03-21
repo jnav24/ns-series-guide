@@ -6,11 +6,25 @@
 
 <StackLayout
 	class="side-drawer__body">
-	<ListView [items]="pages">
+	<ListView [items]="pages" separatorColor="transparent">
 		<ng-template let-page="item" let-int="index">
-			<FlexboxLayout>
-				<Label [text]="page.text"></Label>
-			</FlexboxLayout>
+			<GridLayout rows="auto" columns="50,*" class="active-link" alignItems="center">
+				<Label
+					col="0"
+					row="0"
+					[nsRouterLink]="page.link"
+					[nsRouterLinkActiveOptions]="{exact: true}"
+					nsRouterLinkActive="active-link"
+					[text]="page.icon"
+					class="far fas fa-brands"></Label>
+				<Label
+					col="1"
+					row="0"
+					[nsRouterLink]="page.link"
+					[nsRouterLinkActiveOptions]="{exact: true}"
+					nsRouterLinkActive="active-link"
+					[text]="page.text"></Label>
+			</GridLayout>
 		</ng-template>
 	</ListView>
 </StackLayout>

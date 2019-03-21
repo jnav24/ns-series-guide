@@ -15,5 +15,10 @@
 		padding-bottom: 15;
 		padding-left: 15;
 		padding-top: 15;
+
+		&.active-link {
+			background: lighten(map_get($colors, secondary), 10%);
+			color: map_get($colors, accent);
+		}
 	}
 }
